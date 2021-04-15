@@ -4,7 +4,7 @@ const fs = require('fs');
 //const Choices = require('inquirer/lib/objects/choices');
 //const { title } = require('node:process');
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [];
 
 inquirer 
@@ -41,7 +41,7 @@ inquirer
     },
     {
         type:'list',
-        message: 'Please choose the license for my application',
+        message: 'Please choose the license for your project',
         name: 'license',
         choices: ['mit', 'gpl-3.0']
     },
@@ -54,7 +54,7 @@ inquirer
         type:'input',
         message: 'What is your email?',
         name: 'email',
-    },   
+    }, //aarow function to generate title/header along with content into  
    ]).then(response => {
     const fileName = 'generatedREADME.md';
     var data = '# ' + response.title + '\n';
