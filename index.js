@@ -6,7 +6,6 @@ const fs = require('fs');
 
 // An array of questions for user input
 const questions = [];
-
 inquirer 
    .prompt ([
     {
@@ -54,15 +53,16 @@ inquirer
         type:'input',
         message: 'What is your email?',
         name: 'email',
-    }, //aarow function to generate title/header along with content into  
+    }, //Use of arrow function - Used data to concatenate the users response with the section headers. Used string to add github link and concatnated users github name to the link. 
    ]).then(response => {
     const fileName = 'generatedREADME.md';
     var data = '# ' + response.title + '\n';
     data = data + '\n## Discription\n' + response.discription + '\n';
     data = data + '\n## Installation Instructions\n' + response.installation + '\n';
     data = data + '\n## Usage\n' + response.usage + '\n';
+    data = data + '\n## Test\n' + response.test + '\n';
     data = data + '\n## License\n' + response.license+ '\n' + '![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)' + '\n';
-    data = data + '\n## Question\n' + 'https://github.com/' + response.username+ '\n' + 'Any Additional' + response.email+ '\n';
+    data = data + '\n## Question\n' + 'https://github.com/' + response.username+ '\n' + 'If you have any additional questions, please contact me at' + response.email+ '\n';
 
 
     // var data = '# '+response.title+'\n \
@@ -105,8 +105,8 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName,data,err => //stringify your response and doing a call back by err=>
-        err ? console.log(err) : console.log('success!'));
+    fs.writeFile(fileName,data,err => 
+        err ? console.log(err) : console.log('Generating ReadMe!'));
     
 }
 
