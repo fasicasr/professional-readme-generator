@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Choices = require('inquirer/lib/objects/choices');
+//const Choices = require('inquirer/lib/objects/choices');
+//const { title } = require('node:process');
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -55,17 +56,20 @@ inquirer
         name: 'email',
     },   
    ]).then(response => {
-    const filename = response.username.toLowerCase().split(' ').join('');// one long string that included lowercase and space between
-    
-    fs.writeFile(filename,JSON.stringify(response, null, '\t'),err => //stringify your response and doing a call back by err=>
-    err ? console.log(err) : console.log('success!'));
-
-
+    const fileName = 'generatedREADME.md';
+    var data = '# ' + response.title.toLowerCase().split(' ').join('');
+    data = data + '\n# Discription\n' + response.discription;
+    data = data + '\n# installation instructions\n' + response.installation.toLowerCase().split(' ').join('');
+    data = data + '\n# ' + response.discription.toLowerCase().split(' ').join('');
+    data = data + '\n# ' + response.discription.toLowerCase().split(' ').join('');
+    writeToFile(fileName, data)
+   });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename,JSON.stringify(response, null, '\t'),err => //stringify your response and doing a call back by err=>
-    err ? console.log(err) : console.log('success!'));
+    fs.writeFile(fileName,data,err => //stringify your response and doing a call back by err=>
+        err ? console.log(err) : console.log('success!'));
+    
 }
 
 
@@ -74,3 +78,5 @@ function init() {}
 
 // Function call to initialize app
 init();
+
+
