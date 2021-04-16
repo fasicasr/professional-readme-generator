@@ -44,7 +44,7 @@ function init() {
             type:'list',
             message: 'Please choose the license for your project',
             name: 'license',
-            choices: ['mit[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', 'gpl-3.0']
+            choices: ['mit[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', 'Unlicense[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)','GPL[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)']
         },
         {
             type:'input',
@@ -60,7 +60,7 @@ function init() {
         const fileName = 'generatedREADME.md';
         var data = '# ' + response.title + '\n';
         data = data + '\n## Discription\n' + response.discription + '\n';
-        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#test)' + '\n'   + '-[contribution](#contribution)' + '\n';
+        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#test)' + '\n'  + '-[contribution](#contribution)' + '\n'  + '-[License](#license)' + '\n';
         data = data + '\n## Installation\n' + response.installation + '\n';
         data = data + '\n## Usage\n' + response.usage + '\n';
         data = data + '\n## contribution\n' + response.contribution + '\n';
