@@ -57,13 +57,19 @@ inquirer
    ]).then(response => {
     const fileName = 'generatedREADME.md';
     var data = '# ' + response.title + '\n';
-    data = data + '\n## Discription\n' + response.discription + '\n';
+    data = data + '\n## discription\n' + response.discription + '\n';
+    data = data + '\n## Table of Contents\n' + '-[Discription](#discription)' + '\n' + '-[Installation Instructions](#installation)' + '\n' + '-[Usage](#usage)' + '\n';
     data = data + '\n## Installation Instructions\n' + response.installation + '\n';
     data = data + '\n## Usage\n' + response.usage + '\n';
     data = data + '\n## Test\n' + response.test + '\n';
     data = data + '\n## License\n' + response.license+ '\n' + '![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)' + '\n';
     data = data + '\n## Question\n' + 'https://github.com/' + response.username+ '\n' + 'If you have any additional questions, please contact me at' + response.email+ '\n';
+    
+    //[Text](link)
+    // ### Table of Contents
+    // - ![Discription]('#discription');
 
+   
 
     // var data = '# '+response.title+'\n \
     // # Description\n \
