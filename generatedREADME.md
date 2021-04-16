@@ -1,25 +1,24 @@
-# kjkasdjkflsd
+# Sam
 
-## discription
-alskdjflaksdf
+## Discription
+
 
 ## Table of Contents
--[Discription](#discription)
--[Installation Instructions](#installation)
+-[Discriptions](#discription)
+-[Installation](#Installation)
 -[Usage](#usage)
 
-## Installation Instructions
-alskdfjalskdf
+## Installation
+
 
 ## Usage
-asdkfljasd;klf
+
 
 ## Test
 
 
 ## License
-mit
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+mit[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Question
 https://github.com/
