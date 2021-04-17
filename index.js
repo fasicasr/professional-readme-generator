@@ -17,7 +17,7 @@ function init() {
         },
         {
             type:'input',
-            message: 'Please enter the discription for your project?',
+            message: 'Please enter the discription for your project',
             name: 'discription',
         },
         {
@@ -27,17 +27,17 @@ function init() {
         },
         {
             type:'input',
-            message: 'Please enter usage information for your project?',
+            message: 'Please enter usage information for your project',
             name: 'usage',
         },
         {
             type:'input',
-            message: 'Please enter the contribution guidelines for your project?',
+            message: 'Please enter the contribution guidelines for your project',
             name: 'contribution',
         },
         {
             type:'input',
-            message: 'Please enter the test instructions for your project?',
+            message: 'Please enter the test instructions for your project',
             name: 'tests',
         },
         {
@@ -60,7 +60,7 @@ function init() {
         const fileName = 'generatedREADME.md';
         var data = '# ' + response.title + '\n';
         data = data + '\n## Discription\n' + response.discription + '\n';
-        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#tests)' + '\n'  + '-[contribution](#contribution)' + '\n'  + '-[License](#license)' + '\n';
+        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#tests)' + '\n'  + '-[contribution](#Contribution)' + '\n'  + '-[License](#license)' + '\n';
         data = data + '\n## Installation\n' + response.installation + '\n';
         data = data + '\n## Usage\n' + response.usage + '\n';
         data = data + '\n## Contribution\n' + response.contribution + '\n';
