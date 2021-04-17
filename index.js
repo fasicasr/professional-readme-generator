@@ -57,15 +57,15 @@ function init() {
             name: 'email',
         }, //Use of arrow function - Used data to concatenate the users response with the section headers. Used string to add github link and concatnated users github name to the link. 
     ]).then(response => {
-        const fileName = 'generatedREADME.md';
+        const fileName = 'sampleREADME.md';
         var data = '# ' + response.title + '\n' + response.license+ '\n';
         data = data + '\n## Discription\n' + response.discription + '\n';
-        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#tests)' + '\n'  + '-[contribution](#Contribution)' + '\n'  + '-[License](#license)' + '\n';
+        data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#tests)' + '\n'  + '-[contribution](#Contribution)' + '\n'  + '-[License](#license)' + '\n';
         data = data + '\n## Installation\n' + response.installation + '\n';
         data = data + '\n## Usage\n' + response.usage + '\n';
         data = data + '\n## Contribution\n' + response.contribution + '\n';
         data = data + '\n## Tests\n' + response.test + '\n';
-        data = data + '\n## License\n' + 'Click on badge below to learn more about the license\n' + response.license+ '\n';
+        data = data + '\n## License\n' + 'Click on badge below to learn more about the license: \n' + response.license+ '\n';
         data = data + '\n## Question\n' + 'Github:' + 'https://github.com/' + response.username+ '\n' + 'If you have any additional questions, please contact me at' + response.email+ '\n';
     
         
