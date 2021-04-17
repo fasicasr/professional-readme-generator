@@ -66,7 +66,7 @@ function init() {
         data = data + '\n## Contribution\n' + response.contribution + '\n';
         data = data + '\n## Tests\n' + response.test + '\n';
         data = data + '\n## License\n' + 'Click on badge below to learn more about the license\n' + response.license+ '\n';
-        data = data + '\n## Question\n' + 'https://github.com/' + response.username+ '\n' + 'If you have any additional questions, please contact me at' + response.email+ '\n';
+        data = data + '\n## Question\n' + 'Github:' + 'https://github.com/' + response.username+ '\n' + 'If you have any additional questions, please contact me at' + response.email+ '\n';
     
         
 
