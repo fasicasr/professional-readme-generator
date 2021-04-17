@@ -58,7 +58,7 @@ function init() {
         }, //Use of arrow function - Used data to concatenate the users response with the section headers. Used string to add github link and concatnated users github name to the link. 
     ]).then(response => {
         const fileName = 'generatedREADME.md';
-        var data = '# ' + response.title + '\n';
+        var data = '# ' + response.title + '\n' + response.license+ '\n';
         data = data + '\n## Discription\n' + response.discription + '\n';
         data = data + '\n## Table of Contents\n' + '-[Discriptions](#discription)' + '\n' + '-[Installation](#Installation)' + '\n' + '-[Usage](#usage)' + '\n'+ '-[Test](#tests)' + '\n'  + '-[contribution](#Contribution)' + '\n'  + '-[License](#license)' + '\n';
         data = data + '\n## Installation\n' + response.installation + '\n';
