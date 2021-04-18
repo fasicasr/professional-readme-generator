@@ -6,7 +6,7 @@ This application allows users to generate a README.md file by simply using the c
 
 ## Application Video 
 
-[Please click here link to view application demo:](https://drive.google.com/file/d/1g6xCaAVSMFnflP7zJn1J3kGT2K2FdNcA/view?usp=sharing)
+[Please click here to view the application demo:](https://drive.google.com/file/d/1g6xCaAVSMFnflP7zJn1J3kGT2K2FdNcA/view?usp=sharing)
 
 ## Usage 
 
